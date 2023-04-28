@@ -4,11 +4,6 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 
-
-app.get("/",(req,res)=>{
-  res.send("Working")
-})
-
 // routes
 import AuthRoute from './routes/AuthRoute.js'
 import UserRoute from './routes/UserRoute.js'
@@ -17,6 +12,9 @@ import UploadRoute from './routes/UploadRoute.js'
 
 const app = express();
 
+app.get("/",(req,res)=>{
+  res.send("Working")
+})
 
 // middleware
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
