@@ -1,0 +1,20 @@
+.s-button{
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+
+.tagLine{
+    margin-bottom: -1rem;
+    font-weight: 600;
+    color: var(--silver);
+    font-size: 1.3rem;
+}
+
+.ImageGenerator-div{
+    justify-content: center;
+}
+
+.previewImage>img{
+    object-fit: contain;
+}

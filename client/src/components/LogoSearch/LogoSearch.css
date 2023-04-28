@@ -1,0 +1,73 @@
+.LogoSearch {
+  display: flex;
+  flex-direction: column;
+}
+
+.LogoSearch>div{
+  display: flex;
+  gap: 0.75rem;
+}
+
+.LogoSearch>div>img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+.Search {
+  display: flex;
+  background-color: var(--inputColor);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.Search>input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.s-icon>button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var( --buttonBg);
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  border: none;
+}
+
+.suggested-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  overflow: auto;
+  max-height: 6rem;
+  padding-top: 5px;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight:400;
+  margin: -5px 0px;
+  font-size: 1rem;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+.even{
+  background-color: rgba(202, 200, 199, 0.32)
+}
+
+.odd{
+  background-color: rgb(237, 236, 236);
+}
+
+.user:hover{
+  background-color: rgb(119, 143, 158);
+}

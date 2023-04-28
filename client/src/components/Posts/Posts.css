@@ -1,0 +1,11 @@
+.Posts
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.follow_user{
+    font-size : 2rem;
+    align-self: center;
+}
