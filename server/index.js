@@ -5,6 +5,10 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 
 
+app.get("/",(req,res)=>{
+  res.send("Working")
+})
+
 // routes
 import AuthRoute from './routes/AuthRoute.js'
 import UserRoute from './routes/UserRoute.js'
