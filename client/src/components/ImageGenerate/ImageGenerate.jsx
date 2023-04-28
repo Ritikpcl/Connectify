@@ -28,7 +28,7 @@ const ImageGenerate = () => {
       url: 'https://arimagesynthesizer.p.rapidapi.com/get',
       params: { hash: hash, returnType: 'base64' },
       headers: {
-        'X-RapidAPI-Key': 'befb201749msh4a920c785f5aa8ap16125cjsn57d8c70ac4a5',
+        'X-RapidAPI-Key': `"${process.env.REACT_APP_RAPID_API_KEY}"`,
         'X-RapidAPI-Host': 'arimagesynthesizer.p.rapidapi.com'
       }
     };
@@ -82,7 +82,7 @@ const ImageGenerate = () => {
       url: 'https://arimagesynthesizer.p.rapidapi.com/generate',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
-        'X-RapidAPI-Key': 'befb201749msh4a920c785f5aa8ap16125cjsn57d8c70ac4a5',
+        'X-RapidAPI-Key': `"${process.env.REACT_APP_RAPID_API_KEY}"`,
         'X-RapidAPI-Host': 'arimagesynthesizer.p.rapidapi.com'
       },
       data: encodedParams
@@ -101,7 +101,6 @@ const ImageGenerate = () => {
       setLoading(false)
     }
 
-    // getImage("3a3d8989e2f98a0d1f022a62fb2178d0")
   };
 
   // handle post upload
